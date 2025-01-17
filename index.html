@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streak Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Streak Counter</h1>
+        <div class="container">
+            <div class="button">
+                <button class="btn-addStreak" id="addStreak">
+                    <img src="./images/add.jpg" alt="Add Streak">
+                </button>
+            </div>
+        
+            <div class="watch-image">
+                <img class="watch-img" src="./images/watch.jpeg" alt="Watch">
+            </div>
+            <div class="welcome-section">
+                <h2>Welcome to my Streak Counter</h2>
+                <p>Click on the plus button to add a new streak</p>
+            </div>
+        </div>    
+ 
+        <div id="message"></div>
+        <div id="streakList"></div>
+    </div>
+
+    <div id="addStreakForm" class="modal">
+        <div class="modal-content">
+            <h2>Add New Streak</h2>
+            <input type="text" id="streakName" placeholder="Streak Name">
+            <input type="text" id="streakImage" placeholder="Image URL">
+            <input type="date" id="streakDate">
+            <button id="submitStreak">Add Streak</button>
+            <button id="closeForm">Close</button>
+        </div>
+    </div>
+
+    <div id="viewStreakModal" class="modal">
+        <div class="modal-content">
+            <h2 id="viewStreakName"></h2>
+            <p id="viewStreakDays"></p>
+            <button id="closeViewStreak">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
